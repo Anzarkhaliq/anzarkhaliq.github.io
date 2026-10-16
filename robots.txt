@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.anzarkhaliq.com/sitemap.xml
