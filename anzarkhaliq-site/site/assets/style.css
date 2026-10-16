@@ -166,3 +166,5 @@ blockquote{margin:40px 0;padding:0 0 0 28px;border-left:3px solid var(--amber);f
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}a.card{transition:none}}
+.now .art.cover{background-size:contain;background-repeat:no-repeat;background-color:#000}
+.course-head img.cover-img{aspect-ratio:2/3;object-fit:cover;background:#000}
