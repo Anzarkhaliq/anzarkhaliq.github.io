@@ -23,8 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Assemble site
+        run: |
+          mkdir _site
+          cp -r *.html *.xml *.txt assets img weekend-reads _site/
+          cp -r anzarkhaliq-site/site/img/photos anzarkhaliq-site/site/img/art _site/img/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: anzarkhaliq-site/site
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
