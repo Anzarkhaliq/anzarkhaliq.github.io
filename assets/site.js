@@ -96,3 +96,16 @@
     }, {once:true});
   });
 })();
+
+// interactive classroom picture
+(function(){
+  var box = document.querySelector('.learn'); if (!box) return;
+  var spots = box.querySelectorAll('.spot'), items = box.querySelectorAll('.llist li');
+  function pick(n){
+    spots.forEach(function(s){ s.setAttribute('aria-pressed', s.dataset.n === n ? 'true' : 'false'); });
+    items.forEach(function(li){ li.classList.toggle('on', li.dataset.n === n); });
+  }
+  box.addEventListener('click', function(e){
+    var b = e.target.closest('[data-n]'); if (b && (b.classList.contains('spot') || b.classList.contains('lt'))) pick(b.dataset.n);
+  });
+})();
