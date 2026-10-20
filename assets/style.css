@@ -650,3 +650,4 @@ html{scroll-padding-top:120px}
 @media (max-width:900px){.cvwrap{grid-column:1/-1}}
 .ccards{grid-template-columns:repeat(3,1fr)}
 @media (max-width:900px){.ccards{grid-template-columns:1fr}}
+.wintro{font-size:1rem;color:var(--ink-2);margin:10px 0 6px;max-width:40em}
